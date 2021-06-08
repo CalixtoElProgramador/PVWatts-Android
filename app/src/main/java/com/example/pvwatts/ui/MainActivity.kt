@@ -1,7 +1,8 @@
-package com.example.pvwatts
+package com.example.pvwatts.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.pvwatts.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

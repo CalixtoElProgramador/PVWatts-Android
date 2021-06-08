@@ -1,10 +1,9 @@
-package com.example.pvwatts
+package com.example.pvwatts.ui.outputs
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import com.example.pvwatts.R
 import com.example.pvwatts.databinding.FragmentOutputsBinding
 
 class OutputsFragment : Fragment(R.layout.fragment_outputs) {

@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/outputsFragment">
+    app:startDestination="@id/inputsFragment">
 
     <fragment
         android:id="@+id/inputsFragment"
-        android:name="com.example.pvwatts.InputsFragment"
+        android:name="com.example.pvwatts.ui.inputs.InputsFragment"
         android:label="fragment_inputs"
         tools:layout="@layout/fragment_inputs" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/outputsFragment"
-        android:name="com.example.pvwatts.OutputsFragment"
+        android:name="com.example.pvwatts.ui.outputs.OutputsFragment"
         android:label="fragment_outputs"
         tools:layout="@layout/fragment_outputs" />
 </navigation>

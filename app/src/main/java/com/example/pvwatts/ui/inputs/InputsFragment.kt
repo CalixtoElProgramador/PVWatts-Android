@@ -1,4 +1,4 @@
-package com.example.pvwatts
+package com.example.pvwatts.ui.inputs
 
 import android.os.Bundle
 import android.transition.AutoTransition
@@ -6,6 +6,7 @@ import android.transition.TransitionManager
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
+import com.example.pvwatts.R
 import com.example.pvwatts.databinding.FragmentInputsBinding
 
 class InputsFragment : Fragment(R.layout.fragment_inputs) {
