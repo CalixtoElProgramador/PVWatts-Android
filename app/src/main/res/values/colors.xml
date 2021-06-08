@@ -9,5 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorError">#B00020</color>
     <color name="colorIcons">#404040</color>
+    <color name="colorTextTable">#3D5AFE</color>
+    <color name="colorRow">#E3E3E3</color>
+    <color name="colorAnnual">#FF9100</color>
 
 </resources>

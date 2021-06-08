@@ -21,4 +21,25 @@
     <string name="ground_coverage_ratio">Ground coverage ratio</string>
     <string name="rate_type">Rate Type</string>
     <string name="calculate">Calculate</string>
+    <string name="month">Month</string>
+    <string name="solar_radiation">Solar Radiation</string>
+    <string name="ac_energy">AC Energy</string>
+    <string name="value">Value</string>
+    <string name="kwh_m2_day">(kWh/m2/day)</string>
+    <string name="kwh">(kWh)</string>
+    <string name="value_unit">($)</string>
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="annual">Annual</string>
+
 </resources>

@@ -1,17 +1,11 @@
 package com.example.pvwatts
 
-import android.opengl.Visibility
 import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.TransitionManager
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.view.isGone
-import androidx.core.view.isInvisible
-import androidx.core.view.isVisible
 import com.example.pvwatts.databinding.FragmentInputsBinding
 
 class InputsFragment : Fragment(R.layout.fragment_inputs) {
@@ -35,7 +29,7 @@ class InputsFragment : Fragment(R.layout.fragment_inputs) {
         }
 
         binding.buttonCalculate.setOnClickListener {
-            Toast.makeText(activity, "Calculando...", Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, "Calculating...", Toast.LENGTH_SHORT).show()
         }
 
     }
