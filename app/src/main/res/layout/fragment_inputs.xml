@@ -146,7 +146,7 @@
             android:id="@+id/input_moduleType"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="textAutoComplete" />
+            android:inputType="number" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -185,7 +185,7 @@
             android:id="@+id/input_arrayType"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="textAutoComplete" />
+            android:inputType="numberDecimal" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

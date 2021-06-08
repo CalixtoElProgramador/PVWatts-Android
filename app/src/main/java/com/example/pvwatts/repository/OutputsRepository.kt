@@ -4,6 +4,15 @@ import com.example.pvwatts.data.model.OutputsList
 
 interface OutputsRepository {
 
-    suspend fun getOutputs(): OutputsList
+    suspend fun getOutputs(
+        lat: Double,
+        lon: Double,
+        systemCapacity: Double,
+        azimuth: Double,
+        tilt: Double,
+        arrayType: Int,
+        moduleType: Int,
+        losses: Double
+    ): OutputsList
 
 }

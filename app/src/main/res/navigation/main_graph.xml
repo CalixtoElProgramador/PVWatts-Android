@@ -18,5 +18,30 @@
         android:id="@+id/outputsFragment"
         android:name="com.example.pvwatts.ui.outputs.OutputsFragment"
         android:label="fragment_outputs"
-        tools:layout="@layout/fragment_outputs" />
+        tools:layout="@layout/fragment_outputs" >
+        <argument
+            android:name="lat"
+            app:argType="float" />
+        <argument
+            android:name="lon"
+            app:argType="float" />
+        <argument
+            android:name="systemCapacity"
+            app:argType="float" />
+        <argument
+            android:name="azimuth"
+            app:argType="float" />
+        <argument
+            android:name="tilt"
+            app:argType="float" />
+        <argument
+            android:name="arrayType"
+            app:argType="integer" />
+        <argument
+            android:name="moduleType"
+            app:argType="integer" />
+        <argument
+            android:name="losses"
+            app:argType="float" />
+    </fragment>
 </navigation>

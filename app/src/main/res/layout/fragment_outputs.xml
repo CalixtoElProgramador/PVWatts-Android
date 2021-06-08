@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.outputs.OutputsFragment">
 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TableLayout
         android:id="@+id/table_results"
         android:layout_width="match_parent"
@@ -36,7 +45,7 @@
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/solar_radiation"
+                android:text="@string/radiation"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textColor="@color/colorTextTable"
                 android:textStyle="bold" />
@@ -60,7 +69,7 @@
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/value"
+                android:text="@string/dc_energy"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                 android:textColor="@color/colorTextTable"
                 android:textStyle="bold" />
@@ -107,7 +116,7 @@
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/value_unit"
+                android:text="@string/kwh"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
         </TableRow>
 
@@ -157,7 +166,7 @@
                 tools:text="468" />
 
             <TextView
-                android:id="@+id/value_january"
+                android:id="@+id/dcEnergy_january"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -165,7 +174,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="4.21" />
 
         </TableRow>
 
@@ -208,7 +217,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_february"
+                android:id="@+id/dcEnergy_february"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -216,7 +225,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="5.231" />
         </TableRow>
 
         <TableRow
@@ -259,7 +268,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_march"
+                android:id="@+id/dcEnergy_march"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -267,7 +276,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="3.123" />
         </TableRow>
 
         <TableRow
@@ -309,7 +318,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_april"
+                android:id="@+id/dcEnergy_april"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -317,7 +326,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="4.412" />
         </TableRow>
 
         <TableRow
@@ -360,7 +369,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_may"
+                android:id="@+id/dcEnergy_may"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -368,7 +377,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="5.31" />
         </TableRow>
 
         <TableRow
@@ -410,7 +419,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_june"
+                android:id="@+id/dcEnergy_june"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -418,7 +427,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="4.32" />
         </TableRow>
 
         <TableRow
@@ -461,7 +470,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_july"
+                android:id="@+id/dcEnergy_july"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -469,7 +478,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="6.513" />
         </TableRow>
 
         <TableRow
@@ -511,7 +520,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_august"
+                android:id="@+id/dcEnergy_august"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -519,7 +528,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="6.532" />
         </TableRow>
 
         <TableRow
@@ -562,7 +571,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_september"
+                android:id="@+id/dcEnergy_september"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -570,7 +579,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="3.421" />
         </TableRow>
 
         <TableRow
@@ -612,7 +621,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_october"
+                android:id="@+id/dcEnergy_october"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -620,7 +629,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="6.543" />
         </TableRow>
 
         <TableRow
@@ -663,7 +672,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_november"
+                android:id="@+id/dcEnergy_november"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -671,7 +680,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="4.532" />
         </TableRow>
 
         <TableRow
@@ -713,7 +722,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_december"
+                android:id="@+id/dcEnergy_december"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -721,7 +730,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                tools:text="N/A" />
+                tools:text="4.321" />
         </TableRow>
 
         <View
@@ -769,7 +778,7 @@
                 tools:text="465" />
 
             <TextView
-                android:id="@+id/value_annual"
+                android:id="@+id/dcEnergy_annual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
@@ -778,7 +787,7 @@
                 android:gravity="center"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
                 tools:ignore="TooManyViews"
-                tools:text="N/A" />
+                tools:text="5.641" />
         </TableRow>
 
         <View

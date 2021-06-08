@@ -6,6 +6,24 @@ import com.example.pvwatts.repository.WebService
 
 class OutputsDataSource(private val webService: WebService) {
 
-    suspend fun getOutputs(): OutputsList = webService.getOutputs(AppConstants.API_KEY)
-
+    suspend fun getOutputs(
+        lat: Double,
+        lon: Double,
+        systemCapacity: Double,
+        azimuth: Double,
+        tilt: Double,
+        arrayType: Int,
+        moduleType: Int,
+        losses: Double
+    ): OutputsList = webService.getOutputs(
+        AppConstants.API_KEY,
+        lat,
+        lon,
+        systemCapacity,
+        azimuth,
+        tilt,
+        arrayType,
+        moduleType,
+        losses
+    )
 }

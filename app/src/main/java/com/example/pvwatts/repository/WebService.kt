@@ -11,18 +11,17 @@ import retrofit2.http.Query
 
 interface WebService {
 
-    @GET("pvwatts/v6.json?")
+    @GET("pvwatts/v6.json")
     suspend fun getOutputs(
-        @Query("api_key")
-        apiKey: String
-        /*lat: Double,
-        lon: Double,
-        systemCapacity: Double,
-        azimuth: Double,
-        tilt: Double,
-        array_type: Int,
-        module_type: Int,
-        losses: Double*/
+        @Query("api_key") apiKey: String,
+        @Query("lat") lat: Double,
+        @Query("lon") lon: Double,
+        @Query("system_capacity") systemCapacity: Double,
+        @Query("azimuth") azimuth: Double,
+        @Query("tilt") tilt: Double,
+        @Query("array_type") arrayType: Int,
+        @Query("module_type") moduleType: Int,
+        @Query("losses") losses: Double
     ): OutputsList
 
 }
