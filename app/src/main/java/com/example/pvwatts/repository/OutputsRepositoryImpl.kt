@@ -13,7 +13,23 @@ class OutputsRepositoryImpl(private val dataSource: OutputsDataSource) : Outputs
         tilt: Double,
         arrayType: Int,
         moduleType: Int,
-        losses: Double
+        losses: Double,
+        dcacRatio: Double,
+        inverterEfficiency: Double,
+        groundCoverageRatio: Double
+
     ): OutputsList =
-        dataSource.getOutputs(lat, lon, systemCapacity, azimuth, tilt, arrayType, moduleType, losses)
+        dataSource.getOutputs(
+            lat,
+            lon,
+            systemCapacity,
+            azimuth,
+            tilt,
+            arrayType,
+            moduleType,
+            losses,
+            dcacRatio,
+            inverterEfficiency,
+            groundCoverageRatio
+        )
 }

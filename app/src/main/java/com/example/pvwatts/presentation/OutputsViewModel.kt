@@ -17,7 +17,10 @@ class OutputsViewModel(
     private val tilt: Double,
     private val arrayType: Int,
     private val moduleType: Int,
-    private val losses: Double
+    private val losses: Double,
+    private val dcacRatio: Double,
+    private val inverterEfficiency: Double,
+    private val groundCoverageRatio: Double
 ) : ViewModel() {
 
     fun fetchMainScreenOutputs() = liveData(Dispatchers.IO) {
@@ -34,7 +37,11 @@ class OutputsViewModel(
                         tilt,
                         arrayType,
                         moduleType,
-                        losses
+                        losses,
+                        dcacRatio,
+                        inverterEfficiency,
+                        groundCoverageRatio
+
                     )
                 )
             )
@@ -53,7 +60,11 @@ class OutputsViewModelFactory(
     private val tilt: Double,
     private val arrayType: Int,
     private val moduleType: Int,
-    private val losses: Double
+    private val losses: Double,
+    private val dcacRatio: Double,
+    private val inverterEfficiency: Double,
+    private val groundCoverageRatio: Double
+
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return modelClass.getConstructor(
@@ -65,6 +76,9 @@ class OutputsViewModelFactory(
             Double::class.java,
             Int::class.java,
             Int::class.java,
+            Double::class.java,
+            Double::class.java,
+            Double::class.java,
             Double::class.java
         )
             .newInstance(
@@ -76,7 +90,10 @@ class OutputsViewModelFactory(
                 tilt,
                 arrayType,
                 moduleType,
-                losses
+                losses,
+                dcacRatio,
+                inverterEfficiency,
+                groundCoverageRatio
             )
     }
 }

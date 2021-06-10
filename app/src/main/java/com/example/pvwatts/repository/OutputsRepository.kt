@@ -12,7 +12,11 @@ interface OutputsRepository {
         tilt: Double,
         arrayType: Int,
         moduleType: Int,
-        losses: Double
+        losses: Double,
+        dcacRatio: Double,
+        inverterEfficiency: Double,
+        groundCoverageRatio: Double
+
     ): OutputsList
 
 }

@@ -390,6 +390,7 @@
                     app:boxStrokeErrorColor="@color/colorError"
                     app:endIconMode="clear_text"
                     app:errorEnabled="false"
+                    app:helperText="@string/range_dc_ac_ratio"
                     app:errorIconDrawable="@drawable/ic_error"
                     app:errorIconTint="@color/colorError"
                     app:errorTextColor="@color/colorError"
@@ -401,6 +402,7 @@
                         android:id="@+id/input_ratioSize"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:text="@string/dc_ac_ratio_default_value"
                         android:inputType="numberDecimal" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -429,6 +431,7 @@
                         android:id="@+id/input_inverterEfficiency"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:text="@string/inverter_efficiency_default_value"
                         android:inputType="numberDecimal" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -457,6 +460,7 @@
                         android:id="@+id/input_gcr"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:text="@string/gcr_default_value"
                         android:inputType="numberDecimal" />
 
                 </com.google.android.material.textfield.TextInputLayout>

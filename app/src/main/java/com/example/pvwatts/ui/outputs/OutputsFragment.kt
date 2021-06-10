@@ -33,7 +33,10 @@ class OutputsFragment : Fragment(R.layout.fragment_outputs) {
             args.tilt.toDouble(),
             args.arrayType,
             args.moduleType,
-            args.losses.toDouble()
+            args.losses.toDouble(),
+            args.dcacRatio.toDouble(),
+            args.inverterEfficiency.toDouble(),
+            args.groundCoverageRatio.toDouble()
         )
     }
 

@@ -43,5 +43,17 @@
         <argument
             android:name="losses"
             app:argType="float" />
+        <argument
+            android:name="dcacRatio"
+            app:argType="float"
+            android:defaultValue="1.2" />
+        <argument
+            android:name="inverterEfficiency"
+            app:argType="float"
+            android:defaultValue="96" />
+        <argument
+            android:name="groundCoverageRatio"
+            app:argType="float"
+            android:defaultValue="0.4" />
     </fragment>
 </navigation>

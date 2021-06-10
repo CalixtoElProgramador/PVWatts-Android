@@ -14,7 +14,11 @@ class OutputsDataSource(private val webService: WebService) {
         tilt: Double,
         arrayType: Int,
         moduleType: Int,
-        losses: Double
+        losses: Double,
+        dcacRatio: Double,
+        inverterEfficiency: Double,
+        groundCoverageRatio: Double
+
     ): OutputsList = webService.getOutputs(
         AppConstants.API_KEY,
         lat,
@@ -24,6 +28,9 @@ class OutputsDataSource(private val webService: WebService) {
         tilt,
         arrayType,
         moduleType,
-        losses
+        losses,
+        dcacRatio,
+        inverterEfficiency,
+        groundCoverageRatio
     )
 }

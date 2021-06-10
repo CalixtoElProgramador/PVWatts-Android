@@ -43,5 +43,10 @@
     <string name="annual">Annual</string>
     <string name="radiation">Radiation</string>
     <string name="dc_energy">DC Energy</string>
+    <string name="dc_ac_ratio_default_value">1.2</string>
+    <string name="inverter_efficiency_default_value">96</string>
+    <string name="gcr_default_value">0.4</string>
+    <string name="out_of_range">Out of range</string>
+    <string name="range_dc_ac_ratio">Range: greater than zero</string>
 
 </resources>

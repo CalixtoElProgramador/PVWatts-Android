@@ -21,7 +21,11 @@ interface WebService {
         @Query("tilt") tilt: Double,
         @Query("array_type") arrayType: Int,
         @Query("module_type") moduleType: Int,
-        @Query("losses") losses: Double
+        @Query("losses") losses: Double,
+        @Query("dc_ac_ratio") dcacRatio: Double,
+        @Query("inv_eff") inverterEfficiency: Double,
+        @Query("gcr") groundCoverageRatio: Double
+
     ): OutputsList
 
 }
