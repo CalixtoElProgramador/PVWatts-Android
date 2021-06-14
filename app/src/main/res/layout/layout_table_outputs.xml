@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table_results"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/radiation"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ac_energy"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/dc_energy"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/kwh_m2_day"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/kwh"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/kwh"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/colorIcons" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/january"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_january"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+
+        <TextView
+            android:id="@+id/acEnergy_january"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="468" />
+
+        <TextView
+            android:id="@+id/dcEnergy_january"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="4.21" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/february"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_february"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_february"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_february"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.231" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/march"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_march"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_march"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_march"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="3.123" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/april"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_april"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_april"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_april"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="4.412" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/may"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_may"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_may"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_may"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.31" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/june"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_june"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_june"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_june"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="4.32" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/july"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_july"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_july"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_july"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="6.513" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/august"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_august"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_august"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_august"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="6.532" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/september"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_september"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_september"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_september"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="3.421" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/october"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_october"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_october"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_october"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="6.543" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/november"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_november"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_november"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_november"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="4.532" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/december"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_december"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_december"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_december"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="4.321" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:background="@color/colorIcons" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/annual"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/radiation_annual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.38" />
+
+        <TextView
+            android:id="@+id/acEnergy_annual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="465" />
+
+        <TextView
+            android:id="@+id/dcEnergy_annual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:ignore="TooManyViews"
+            tools:text="5.641" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/colorIcons"
+        tools:ignore="TooManyViews" />
+
+</TableLayout>

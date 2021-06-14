@@ -1,10 +1,10 @@
 package com.example.pvwatts.repository
 
-import com.example.pvwatts.data.model.OutputsList
+import com.example.pvwatts.data.model.ResponseFields
 
-interface OutputsRepository {
+interface ResponseFieldsRepository {
 
-    suspend fun getOutputs(
+    suspend fun getResponseFields(
         lat: Double,
         lon: Double,
         systemCapacity: Double,
@@ -17,6 +17,6 @@ interface OutputsRepository {
         inverterEfficiency: Double,
         groundCoverageRatio: Double
 
-    ): OutputsList
+    ): ResponseFields
 
 }

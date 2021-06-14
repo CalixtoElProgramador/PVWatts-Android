@@ -53,7 +53,7 @@ class InputsFragment : Fragment(R.layout.fragment_inputs) {
                 getString(R.string.required)
             binding.inputSystemSize.text.toString().toDouble() > 500000.0 ||
                     binding.inputSystemSize.text.toString().toDouble() < 0.05 ->
-                binding.inputSystemSize.error = getString(R.string.out_of_range)
+                binding.inputLayoutSystemSize.error = getString(R.string.out_of_range)
 
             binding.inputModuleType.text.isNullOrEmpty() -> binding.inputLayoutModuleType.error =
                 getString(R.string.required)
@@ -96,6 +96,23 @@ class InputsFragment : Fragment(R.layout.fragment_inputs) {
         }
     }
 
+    private fun sendParameters() {
+        val action = InputsFragmentDirections.actionInputsFragmentToOutputsFragment(
+            binding.inputLatitude.text.toString().toFloat(),
+            binding.inputLongitude.text.toString().toFloat(),
+            binding.inputSystemSize.text.toString().toFloat(),
+            binding.inputAzimuth.text.toString().toFloat(),
+            binding.inputLatitude.text.toString().toFloat(),
+            binding.inputArrayType.text.toString().toInt(),
+            binding.inputModuleType.text.toString().toInt(),
+            binding.inputSystemLosses.text.toString().toFloat(),
+            binding.inputRatioSize.text.toString().toFloat(),
+            binding.inputInverterEfficiency.text.toString().toFloat(),
+            binding.inputGcr.text.toString().toFloat()
+        )
+        findNavController().navigate(action)
+    }
+
     private fun expandCardView() {
         binding.buttonExpandCardView.setOnClickListener {
             if (binding.constraintLayoutCardExpandable.visibility == View.GONE) {
@@ -114,23 +131,6 @@ class InputsFragment : Fragment(R.layout.fragment_inputs) {
                 binding.buttonExpandCardView.setBackgroundResource(R.drawable.ic_arrow_down)
             }
         }
-    }
-
-    private fun sendParameters() {
-        val action = InputsFragmentDirections.actionInputsFragmentToOutputsFragment(
-            binding.inputLatitude.text.toString().toFloat(),
-            binding.inputLongitude.text.toString().toFloat(),
-            binding.inputSystemSize.text.toString().toFloat(),
-            binding.inputAzimuth.text.toString().toFloat(),
-            binding.inputLatitude.text.toString().toFloat(),
-            binding.inputArrayType.text.toString().toInt(),
-            binding.inputModuleType.text.toString().toInt(),
-            binding.inputSystemLosses.text.toString().toFloat(),
-            binding.inputRatioSize.text.toString().toFloat(),
-            binding.inputInverterEfficiency.text.toString().toFloat(),
-            binding.inputGcr.text.toString().toFloat()
-        )
-        findNavController().navigate(action)
     }
 
     private fun setViewErrorFalseAfterChanges() {

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/location"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/colorIcons" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/requested_location"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="Yucatán" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/latitude"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/longitude"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorIcons" />
+
+</TableLayout>

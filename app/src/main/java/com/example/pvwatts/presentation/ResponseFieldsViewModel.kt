@@ -4,12 +4,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.liveData
 import com.example.pvwatts.core.Resource
-import com.example.pvwatts.repository.OutputsRepository
+import com.example.pvwatts.repository.ResponseFieldsRepository
 import kotlinx.coroutines.Dispatchers
 import java.lang.Exception
 
-class OutputsViewModel(
-    private val repo: OutputsRepository,
+class ResponseFieldsViewModel(
+    private val repo: ResponseFieldsRepository,
     private val lat: Double,
     private val lon: Double,
     private val systemCapacity: Double,
@@ -29,7 +29,7 @@ class OutputsViewModel(
         try {
             emit(
                 Resource.Success(
-                    repo.getOutputs(
+                    repo.getResponseFields(
                         lat,
                         lon,
                         systemCapacity,
@@ -41,7 +41,6 @@ class OutputsViewModel(
                         dcacRatio,
                         inverterEfficiency,
                         groundCoverageRatio
-
                     )
                 )
             )
@@ -51,8 +50,8 @@ class OutputsViewModel(
     }
 }
 
-class OutputsViewModelFactory(
-    private val repo: OutputsRepository,
+class ResponseFieldsViewModelFactory(
+    private val repo: ResponseFieldsRepository,
     private val lat: Double,
     private val lon: Double,
     private val systemCapacity: Double,
@@ -68,7 +67,7 @@ class OutputsViewModelFactory(
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return modelClass.getConstructor(
-            OutputsRepository::class.java,
+            ResponseFieldsRepository::class.java,
             Double::class.java,
             Double::class.java,
             Double::class.java,

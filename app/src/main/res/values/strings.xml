@@ -9,15 +9,11 @@
     <string name="latitude">Latitude</string>
     <string name="longitude">Longitude</string>
     <string name="dc_system_size_kw">DC System Size (kW)</string>
-    <string name="module_type">Module Type</string>
     <string name="required">*Required</string>
-    <string name="array_type">Array Type</string>
-    <string name="system_losses">System Losses</string>
     <string name="tilt_deg">Tilt (deg)</string>
     <string name="azimuth_deg">Azimuth (deg)</string>
     <string name="advanced_parameters">Advanced Parameters</string>
-    <string name="dc_to_ac_size_ratio">DC to AC Size Ratio</string>
-    <string name="inverter_efficiency">Inverter Efficiency (%)</string>
+    <string name="inverter_efficiency_with_symbol">Inverter Efficiency (%)</string>
     <string name="ground_coverage_ratio">Ground coverage ratio</string>
     <string name="rate_type">Rate Type</string>
     <string name="calculate">Calculate</string>
@@ -48,5 +44,17 @@
     <string name="gcr_default_value">0.4</string>
     <string name="out_of_range">Out of range</string>
     <string name="range_dc_ac_ratio">Range: greater than zero</string>
+    <string name="pv_system_specifications">PV System Specifications</string>
+    <string name="dc_system_size">DC System Size</string>
+    <string name="module_type">Module Type</string>
+    <string name="array_type">Array Type</string>
+    <string name="array_tilt">Array Tilt</string>
+    <string name="array_azimuth">Array Azimuth</string>
+    <string name="system_losses">System Losses</string>
+    <string name="inverter_efficiency">Inverter Efficiency</string>
+    <string name="dc_to_ac_size_ratio">DC to AC Size Ratio</string>
+    <string name="capacity_factor">Capacity Factor</string>
+    <string name="location">Location</string>
+    <string name="requested_location">Requested Location</string>
 
 </resources>

@@ -1,12 +1,12 @@
 package com.example.pvwatts.data.remote
 
 import com.example.pvwatts.application.AppConstants
-import com.example.pvwatts.data.model.OutputsList
+import com.example.pvwatts.data.model.ResponseFields
 import com.example.pvwatts.repository.WebService
 
-class OutputsDataSource(private val webService: WebService) {
+class ResponseFieldsDataSource(private val webService: WebService) {
 
-    suspend fun getOutputs(
+    suspend fun getResponseFields(
         lat: Double,
         lon: Double,
         systemCapacity: Double,
@@ -19,7 +19,7 @@ class OutputsDataSource(private val webService: WebService) {
         inverterEfficiency: Double,
         groundCoverageRatio: Double
 
-    ): OutputsList = webService.getOutputs(
+    ): ResponseFields = webService.getResponseFields(
         AppConstants.API_KEY,
         lat,
         lon,
@@ -33,4 +33,5 @@ class OutputsDataSource(private val webService: WebService) {
         inverterEfficiency,
         groundCoverageRatio
     )
+
 }

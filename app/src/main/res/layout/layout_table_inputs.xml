@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table_inputs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/pv_system_specifications"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@color/colorIcons" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/dc_system_size"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_systemSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/module_type"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_moduleType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/array_type"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_arrayType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/array_tilt"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_arrayTilt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/array_azimuth"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_arrayAzimuth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/system_losses"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_systemLosses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/inverter_efficiency"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_inverterEfficiency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/dc_to_ac_size_ratio"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_ratioSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRow">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/capacity_factor"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/output_capacityFactor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="5.35" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorIcons" />
+
+</TableLayout>

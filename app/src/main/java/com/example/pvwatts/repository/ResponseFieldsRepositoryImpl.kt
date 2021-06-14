@@ -1,11 +1,11 @@
 package com.example.pvwatts.repository
 
-import com.example.pvwatts.data.model.OutputsList
-import com.example.pvwatts.data.remote.OutputsDataSource
+import com.example.pvwatts.data.model.ResponseFields
+import com.example.pvwatts.data.remote.ResponseFieldsDataSource
 
-class OutputsRepositoryImpl(private val dataSource: OutputsDataSource) : OutputsRepository {
+class ResponseFieldsRepositoryImpl(private val dataSource: ResponseFieldsDataSource) : ResponseFieldsRepository {
 
-    override suspend fun getOutputs(
+    override suspend fun getResponseFields(
         lat: Double,
         lon: Double,
         systemCapacity: Double,
@@ -18,8 +18,8 @@ class OutputsRepositoryImpl(private val dataSource: OutputsDataSource) : Outputs
         inverterEfficiency: Double,
         groundCoverageRatio: Double
 
-    ): OutputsList =
-        dataSource.getOutputs(
+    ): ResponseFields =
+        dataSource.getResponseFields(
             lat,
             lon,
             systemCapacity,

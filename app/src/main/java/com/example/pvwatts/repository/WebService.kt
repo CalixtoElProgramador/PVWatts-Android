@@ -1,7 +1,7 @@
 package com.example.pvwatts.repository
 
 import com.example.pvwatts.application.AppConstants
-import com.example.pvwatts.data.model.OutputsList
+import com.example.pvwatts.data.model.ResponseFields
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -12,7 +12,7 @@ import retrofit2.http.Query
 interface WebService {
 
     @GET("pvwatts/v6.json")
-    suspend fun getOutputs(
+    suspend fun getResponseFields(
         @Query("api_key") apiKey: String,
         @Query("lat") lat: Double,
         @Query("lon") lon: Double,
@@ -26,7 +26,7 @@ interface WebService {
         @Query("inv_eff") inverterEfficiency: Double,
         @Query("gcr") groundCoverageRatio: Double
 
-    ): OutputsList
+    ): ResponseFields
 
 }
 
