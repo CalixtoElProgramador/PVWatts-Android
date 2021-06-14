@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    tools:context=".ui.inputs.InputsFragment02">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/system_info"
+        android:textColor="@color/design_default_color_primary" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/description_fragment_inputs_01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_tilt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:hint="@string/tilt_deg"
+            app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+            app:boxCornerRadiusTopStart="@dimen/_4sdp"
+            app:boxStrokeErrorColor="@color/colorError"
+            app:endIconMode="clear_text"
+            app:errorEnabled="false"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/colorError"
+            app:errorTextColor="@color/colorError"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:startIconDrawable="@drawable/ic_sunny">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_tilt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/ic_info"
+            android:backgroundTint="#2979FF"
+            android:contentDescription="@string/show_information_about_the_input" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_azimuth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/azimuth_deg"
+            app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+            app:boxCornerRadiusTopStart="@dimen/_4sdp"
+            app:boxStrokeErrorColor="@color/colorError"
+            app:endIconMode="clear_text"
+            app:errorEnabled="false"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/colorError"
+            app:errorTextColor="@color/colorError"
+            app:helperTextEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:startIconDrawable="@drawable/ic_outline_sunny">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_azimuth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/ic_info"
+            android:backgroundTint="#2979FF"
+            android:contentDescription="@string/show_information_about_the_input" />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_advancedParameters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:padding="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/stroke_color"
+        app:strokeWidth="@dimen/_1sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <!-- Title, secondary and supporting text -->
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="32dp" />
+
+            <TextView
+                android:id="@+id/text_titleCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="@string/advanced_parameters"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/button_expandCardView"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_arrow_down"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/constraintLayout_cardExpandable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/guideline13">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayout_ratioSize"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/dc_to_ac_size_ratio"
+                        app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                        app:boxStrokeErrorColor="@color/colorError"
+                        app:endIconMode="clear_text"
+                        app:errorEnabled="false"
+                        app:errorIconDrawable="@drawable/ic_error"
+                        app:errorIconTint="@color/colorError"
+                        app:errorTextColor="@color/colorError"
+                        app:helperText="@string/range_dc_ac_ratio">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_ratioSize"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:text="@string/dc_ac_ratio_default_value" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageButton
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:background="@drawable/ic_info"
+                        android:backgroundTint="#2979FF"
+                        android:contentDescription="@string/show_information_about_the_input" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayout_inverterEfficiency"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/inverter_efficiency_with_symbol"
+                        app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                        app:boxStrokeErrorColor="@color/colorError"
+                        app:endIconMode="clear_text"
+                        app:errorEnabled="false"
+                        app:errorIconDrawable="@drawable/ic_error"
+                        app:errorIconTint="@color/colorError"
+                        app:errorTextColor="@color/colorError"
+                        app:helperText="Range: 90 - 99.5">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_inverterEfficiency"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:text="@string/inverter_efficiency_default_value" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageButton
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:background="@drawable/ic_info"
+                        android:backgroundTint="#2979FF"
+                        android:contentDescription="@string/show_information_about_the_input" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputLayout_gcr"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/ground_coverage_ratio"
+                        app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_4sdp"
+                        app:boxStrokeErrorColor="@color/colorError"
+                        app:endIconMode="clear_text"
+                        app:errorEnabled="false"
+                        app:errorIconDrawable="@drawable/ic_error"
+                        app:errorIconTint="@color/colorError"
+                        app:errorTextColor="@color/colorError"
+                        app:helperText="Range: 0 - 3">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_gcr"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:text="@string/gcr_default_value" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageButton
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:background="@drawable/ic_info"
+                        android:backgroundTint="#2979FF"
+                        android:contentDescription="@string/show_information_about_the_input" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

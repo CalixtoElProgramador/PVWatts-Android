@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    tools:context=".ui.inputs.InputsFragment01">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/system_info"
+        android:textColor="@color/design_default_color_primary" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/description_fragment_inputs_01" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_systemSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/dc_system_size_kw"
+            app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+            app:boxCornerRadiusTopStart="@dimen/_4sdp"
+            app:boxStrokeErrorColor="@color/colorError"
+            app:endIconMode="clear_text"
+            app:errorEnabled="false"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/colorError"
+            app:errorTextColor="@color/colorError"
+            app:helperText="Range 0.05 to 500000"
+            app:startIconDrawable="@drawable/ic_electricity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_systemSize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/ic_info"
+            android:backgroundTint="#2979FF"
+            android:contentDescription="@string/show_information_about_the_input" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_moduleType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/module_type"
+            app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+            app:boxCornerRadiusTopStart="@dimen/_4sdp"
+            app:boxStrokeErrorColor="@color/colorError"
+            app:endIconMode="clear_text"
+            app:errorEnabled="false"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/colorError"
+            app:errorTextColor="@color/colorError"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputLayout_systemSize"
+            app:startIconDrawable="@drawable/ic_panel_solar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_moduleType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/ic_info"
+            android:backgroundTint="#2979FF"
+            android:contentDescription="@string/show_information_about_the_input" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_arrayType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/array_type"
+            app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+            app:boxCornerRadiusTopStart="@dimen/_4sdp"
+            app:boxStrokeErrorColor="@color/colorError"
+            app:endIconMode="clear_text"
+            app:errorEnabled="false"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/colorError"
+            app:errorTextColor="@color/colorError"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputLayout_moduleType"
+            app:startIconDrawable="@drawable/ic_array_type">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_arrayType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/ic_info"
+            android:backgroundTint="#2979FF"
+            android:contentDescription="@string/show_information_about_the_input" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayout_systemLosses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/system_losses"
+            app:boxCornerRadiusTopEnd="@dimen/_4sdp"
+            app:boxCornerRadiusTopStart="@dimen/_4sdp"
+            app:boxStrokeErrorColor="@color/colorError"
+            app:endIconMode="clear_text"
+            app:errorEnabled="false"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:errorIconTint="@color/colorError"
+            app:errorTextColor="@color/colorError"
+            app:helperText="Range: -5 to 99"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inputLayout_arrayType"
+            app:startIconDrawable="@drawable/ic_losses">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_systemLosses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:background="@drawable/ic_info"
+            android:backgroundTint="#2979FF"
+            android:contentDescription="@string/show_information_about_the_input" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

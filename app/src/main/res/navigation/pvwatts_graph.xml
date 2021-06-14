@@ -7,12 +7,16 @@
 
     <fragment
         android:id="@+id/inputsFragment"
-        android:name="com.example.pvwatts.ui.inputs.InputsFragment"
+        android:name="com.example.pvwatts.ui.inputs.InputsFragment00"
         android:label="fragment_inputs"
-        tools:layout="@layout/fragment_inputs" >
+        tools:layout="@layout/fragment_inputs_00" >
         <action
-            android:id="@+id/action_inputsFragment_to_outputsFragment"
-            app:destination="@id/outputsFragment" />
+            android:id="@+id/action_inputsFragment_to_inputsFragment01"
+            app:destination="@id/inputsFragment01"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/outputsFragment"
@@ -55,5 +59,37 @@
             android:name="groundCoverageRatio"
             app:argType="float"
             android:defaultValue="0.4" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputsFragment01"
+        android:name="com.example.pvwatts.ui.inputs.InputsFragment01"
+        android:label="fragment_inputs_01"
+        tools:layout="@layout/fragment_inputs_01" >
+        <action
+            android:id="@+id/action_inputsFragment01_to_inputsFragment02"
+            app:destination="@id/inputsFragment02"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="lat"
+            app:argType="float" />
+        <argument
+            android:name="float"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputsFragment02"
+        android:name="com.example.pvwatts.ui.inputs.InputsFragment02"
+        android:label="fragment_inputs_02"
+        tools:layout="@layout/fragment_inputs_02" >
+        <action
+            android:id="@+id/action_inputsFragment02_to_outputsFragment"
+            app:destination="@id/outputsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 </navigation>

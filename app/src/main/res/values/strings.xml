@@ -56,5 +56,11 @@
     <string name="capacity_factor">Capacity Factor</string>
     <string name="location">Location</string>
     <string name="requested_location">Requested Location</string>
+    <string name="show_information_about_the_input">Show information about the input</string>
+    <string name="description_fragment_inputs_00">Please enter a location. Sometimes a more specific location works better, but other times a more general location is best.</string>
+    <string name="description_fragment_inputs_01">Modify the inputs below to run the simulation.</string>
+    <string name="system_info">System info</string>
+    <string name="continue0">Continue</string>
+    <string name="next">Next</string>
 
 </resources>
