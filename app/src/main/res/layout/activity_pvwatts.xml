@@ -48,6 +48,20 @@
         android:layout_marginBottom="@dimen/_16sdp"
         android:text="@string/next"
         app:layout_anchor="@id/nested_scroll_view"
-        app:layout_anchorGravity="bottom|right|end"/>
+        app:layout_anchorGravity="bottom|right|end" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:backgroundTint="@color/white"
+        android:text="@string/back"
+        android:textColor="@color/design_default_color_primary"
+        app:layout_anchor="@id/nested_scroll_view"
+        app:layout_anchorGravity="bottom|start"
+        app:strokeColor="@color/design_default_color_primary"
+        app:strokeWidth="@dimen/_1sdp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

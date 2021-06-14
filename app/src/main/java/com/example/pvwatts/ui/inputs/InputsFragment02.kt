@@ -6,10 +6,12 @@ import android.transition.TransitionManager
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Button
+import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.pvwatts.R
 import com.example.pvwatts.databinding.FragmentInputs02Binding
+import com.google.android.material.button.MaterialButton
 
 class InputsFragment02 : Fragment(R.layout.fragment_inputs_02) {
 
@@ -19,14 +21,18 @@ class InputsFragment02 : Fragment(R.layout.fragment_inputs_02) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentInputs02Binding.bind(view)
-        expandCardView()
 
+        expandCardView()
         getArgsViewModel()
+        setViewErrorFalseAfterChanges()
 
         activity?.findViewById<Button>(R.id.button_next)?.setOnClickListener {
             validateInputs()
         }
 
+        activity?.findViewById<MaterialButton>(R.id.button_back)?.setOnClickListener {
+            activity?.onBackPressed()
+        }
     }
 
     private fun validateInputs() {
@@ -129,6 +135,25 @@ class InputsFragment02 : Fragment(R.layout.fragment_inputs_02) {
             binding.inputRatioSize.setText("${it.dcacRatio}")
             binding.inputInverterEfficiency.setText("${it.inverterEfficiency}")
             binding.inputGcr.setText("${it.groundCoverageRatio}")
+        }
+    }
+
+    private fun setViewErrorFalseAfterChanges() {
+
+        binding.inputTilt.doAfterTextChanged {
+            binding.inputLayoutTilt.isErrorEnabled = false
+        }
+        binding.inputAzimuth.doAfterTextChanged {
+            binding.inputLayoutAzimuth.isErrorEnabled = false
+        }
+        binding.inputRatioSize.doAfterTextChanged {
+            binding.inputLayoutRatioSize.isErrorEnabled = false
+        }
+        binding.inputInverterEfficiency.doAfterTextChanged {
+            binding.inputLayoutInverterEfficiency.isErrorEnabled = false
+        }
+        binding.inputGcr.doAfterTextChanged {
+            binding.inputLayoutGcr.isErrorEnabled = false
         }
     }
 

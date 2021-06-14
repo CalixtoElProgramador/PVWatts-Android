@@ -32,6 +32,7 @@
             android:id="@+id/inputLayout_systemSize"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
             android:layout_weight="1"
             android:hint="@string/dc_system_size_kw"
             app:boxCornerRadiusTopEnd="@dimen/_4sdp"
@@ -72,14 +73,14 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputLayout_moduleType"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
             android:layout_weight="1"
-            android:hint="@string/module_type"
             app:boxCornerRadiusTopEnd="@dimen/_4sdp"
             app:boxCornerRadiusTopStart="@dimen/_4sdp"
             app:boxStrokeErrorColor="@color/colorError"
-            app:endIconMode="clear_text"
             app:errorEnabled="false"
             app:errorIconDrawable="@drawable/ic_error"
             app:errorIconTint="@color/colorError"
@@ -88,11 +89,12 @@
             app:layout_constraintTop_toBottomOf="@id/inputLayout_systemSize"
             app:startIconDrawable="@drawable/ic_panel_solar">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/input_moduleType"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="number" />
+                android:hint="@string/module_type"
+                android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -115,14 +117,14 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/inputLayout_arrayType"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
             android:layout_weight="1"
-            android:hint="@string/array_type"
             app:boxCornerRadiusTopEnd="@dimen/_4sdp"
             app:boxCornerRadiusTopStart="@dimen/_4sdp"
             app:boxStrokeErrorColor="@color/colorError"
-            app:endIconMode="clear_text"
             app:errorEnabled="false"
             app:errorIconDrawable="@drawable/ic_error"
             app:errorIconTint="@color/colorError"
@@ -131,11 +133,12 @@
             app:layout_constraintTop_toBottomOf="@id/inputLayout_moduleType"
             app:startIconDrawable="@drawable/ic_array_type">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <AutoCompleteTextView
                 android:id="@+id/input_arrayType"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="numberDecimal" />
+                android:hint="@string/array_type"
+                android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -160,6 +163,7 @@
             android:id="@+id/inputLayout_systemLosses"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
             android:layout_weight="1"
             android:hint="@string/system_losses"
             app:boxCornerRadiusTopEnd="@dimen/_4sdp"

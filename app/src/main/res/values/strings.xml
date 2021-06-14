@@ -62,5 +62,22 @@
     <string name="system_info">System info</string>
     <string name="continue0">Continue</string>
     <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    <string-array name="module_type">
+        <item>Standard</item>
+        <item>Premium</item>
+        <item>Thin Film</item>
+
+    </string-array>
+
+    <string-array name="array_type">
+        <item>Fixed (open rack)</item>
+        <item>Fixed (roof mount)</item>
+        <item>1-Axis Tracking</item>
+        <item>1-Axis Backtracking</item>
+        <item>2-Axis Tracking</item>
+
+    </string-array>
 
 </resources>
