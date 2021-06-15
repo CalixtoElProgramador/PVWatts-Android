@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    tools:context=".ui.auth.LoginFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arsenal_bold"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/mathsolar"
+        android:textColor="@color/TextPrimary"
+        android:textSize="@dimen/_30ssp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/log_in_with_your_email_address"
+        android:textColor="@color/TextSecondary"
+        android:textSize="@dimen/_13ssp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:hint="@string/email"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="@dimen/_16sdp"
+        app:boxCornerRadiusTopStart="@dimen/_16sdp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSubtitle"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:hint="@string/password"
+        app:boxCornerRadiusBottomEnd="@dimen/_16sdp"
+        app:boxCornerRadiusBottomStart="@dimen/_16sdp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldEmail"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:text="@string/remember_me"
+        android:textColor="@color/TextSecondary"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldPassword" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorError"
+        android:visibility="invisible"
+        android:text="@string/error_login"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginStart="@dimen/_56sdp"
+        android:layout_marginEnd="@dimen/_56sdp"
+        android:text="@string/sign_in"
+        android:textSize="@dimen/_11ssp"
+        app:cornerRadius="@dimen/_16sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_56sdp"
+        android:layout_marginEnd="@dimen/_56sdp"
+        android:text="@string/sign_up"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="@dimen/_11ssp"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textRecuperarContraseña"
+        app:strokeColor="@color/design_default_color_primary"
+        app:strokeWidth="@dimen/_1sdp" />
+
+    <TextView
+        android:id="@+id/text_recoveryPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/i_forgot_my_password_c"
+        android:textAlignment="center"
+        android:textColor="@color/TextSecondary"
+        android:textSize="@dimen/_13ssp" />
+
+</LinearLayout>

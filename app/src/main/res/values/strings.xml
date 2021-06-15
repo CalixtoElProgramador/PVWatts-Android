@@ -63,6 +63,31 @@
     <string name="continue0">Continue</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
+    <string name="mathsolar">MathSolar</string>
+    <string name="log_in_with_your_email_address">Log in with your email address</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="error_login">A problem has occurred. Verify that the information was correct.</string>
+    <string name="i_forgot_my_password_c">I forgot my password :c</string>
+    <string name="subtitle_login">Let\'s make the change</string>
+    <string name="math">Math</string>
+    <string name="solar">Solar</string>
+    <string name="description_cancel_button">Button to cancel the record from any fragment of the record</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="subtitle_register_00">Enter your name along with your email address to start your registration.</string>
+    <string name="name">Name</string>
+    <string name="lastname">Lastname</string>
+    <string name="create_a_password">Create a password</string>
+    <string name="subtitle_register_01">Enter a password and retype it below to compare if they are the same</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="passwords_are_not_the_same">Passwords are not the same</string>
+    <string name="smile">Smile!</string>
+    <string name="subtitle_register_02">Click on the icon above to select your profile picture.</string>
+    <string name="there_is_no_app_to_take_a_photo">There is no app to take a photo</string>
+    <string name="select_a_photo">Select a photo</string>
 
     <string-array name="module_type">
         <item>Standard</item>

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/inputsFragment"
-        android:name="com.example.pvwatts.ui.inputs.InputsFragment00"
+        android:name="com.example.pvwatts.ui.pvwatts.InputsFragment00"
         android:label="fragment_inputs"
         tools:layout="@layout/fragment_inputs_00" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/outputsFragment"
-        android:name="com.example.pvwatts.ui.outputs.OutputsFragment"
+        android:name="com.example.pvwatts.ui.pvwatts.OutputsFragment"
         android:label="fragment_outputs"
         tools:layout="@layout/fragment_outputs" >
         <argument
@@ -62,7 +62,7 @@
     </fragment>
     <fragment
         android:id="@+id/inputsFragment01"
-        android:name="com.example.pvwatts.ui.inputs.InputsFragment01"
+        android:name="com.example.pvwatts.ui.pvwatts.InputsFragment01"
         android:label="fragment_inputs_01"
         tools:layout="@layout/fragment_inputs_01" >
         <action
@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/inputsFragment02"
-        android:name="com.example.pvwatts.ui.inputs.InputsFragment02"
+        android:name="com.example.pvwatts.ui.pvwatts.InputsFragment02"
         android:label="fragment_inputs_02"
         tools:layout="@layout/fragment_inputs_02" >
         <action

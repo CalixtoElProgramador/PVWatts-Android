@@ -1,4 +1,4 @@
-package com.example.pvwatts.ui
+package com.example.pvwatts.ui.pvwatts
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

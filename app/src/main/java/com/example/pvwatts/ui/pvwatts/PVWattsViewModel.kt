@@ -1,4 +1,4 @@
-package com.example.pvwatts.ui.inputs
+package com.example.pvwatts.ui.pvwatts
 
 import android.os.Parcelable
 import androidx.lifecycle.LiveData

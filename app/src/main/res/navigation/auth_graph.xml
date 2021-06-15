@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pvwatts.ui.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_PVWattsActivity"
+            app:destination="@id/PVWattsActivity" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment00"
+            app:destination="@id/registerFragment00" />
+    </fragment>
+    <activity
+        android:id="@+id/PVWattsActivity"
+        android:name="com.example.pvwatts.ui.pvwatts.PVWattsActivity"
+        android:label="activity_pvwatts"
+        tools:layout="@layout/activity_pvwatts" />
+    <fragment
+        android:id="@+id/registerFragment00"
+        android:name="com.example.pvwatts.ui.auth.RegisterFragment00"
+        android:label="fragment_register_00"
+        tools:layout="@layout/fragment_register_00" >
+        <action
+            android:id="@+id/action_registerFragment00_to_registerFragment01"
+            app:destination="@id/registerFragment01"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment01"
+        android:name="com.example.pvwatts.ui.auth.RegisterFragment01"
+        android:label="fragment_register_01"
+        tools:layout="@layout/fragment_register_01" >
+        <action
+            android:id="@+id/action_registerFragment01_to_registerFragment02"
+            app:destination="@id/registerFragment02"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment02"
+        android:name="com.example.pvwatts.ui.auth.RegisterFragment02"
+        android:label="fragment_register_02"
+        tools:layout="@layout/fragment_register_02" >
+        <action
+            android:id="@+id/action_registerFragment02_to_PVWattsActivity"
+            app:destination="@id/PVWattsActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

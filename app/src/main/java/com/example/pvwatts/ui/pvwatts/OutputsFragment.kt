@@ -1,4 +1,4 @@
-package com.example.pvwatts.ui.outputs
+package com.example.pvwatts.ui.pvwatts
 
 import android.annotation.SuppressLint
 import android.os.Bundle

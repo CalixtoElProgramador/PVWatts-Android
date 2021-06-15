@@ -13,4 +13,7 @@
     <color name="colorRow">#E3E3E3</color>
     <color name="colorAnnual">#FF9100</color>
 
+    <color name="TextPrimary">#212121</color>
+    <color name="TextSecondary">#757575</color>
+
 </resources>
