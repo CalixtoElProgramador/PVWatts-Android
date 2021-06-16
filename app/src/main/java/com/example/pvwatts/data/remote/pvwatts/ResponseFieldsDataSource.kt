@@ -1,8 +1,8 @@
-package com.example.pvwatts.data.remote
+package com.example.pvwatts.data.remote.pvwatts
 
 import com.example.pvwatts.application.AppConstants
-import com.example.pvwatts.data.model.ResponseFields
-import com.example.pvwatts.repository.WebService
+import com.example.pvwatts.data.model.pvwatts.ResponseFields
+import com.example.pvwatts.repository.pvwatts.WebService
 
 class ResponseFieldsDataSource(private val webService: WebService) {
 

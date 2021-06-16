@@ -4,14 +4,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.NavController
+import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.example.pvwatts.R
 import com.example.pvwatts.databinding.ActivityAuthBinding
 import com.example.pvwatts.databinding.ActivityPvwattsBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class AuthActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAuthBinding
+    private val firebaseAuth by lazy { FirebaseAuth.getInstance() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

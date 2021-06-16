@@ -2,9 +2,7 @@ package com.example.pvwatts.ui.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -15,7 +13,7 @@ import com.google.android.material.button.MaterialButton
 class RegisterFragment01 : Fragment(R.layout.fragment_register_01) {
 
     private lateinit var binding: FragmentRegister01Binding
-    private val viewModel: AuthViewModel by activityViewModels()
+    private val viewModel: RegisterViewModel by activityViewModels()
 
     override fun onResume() {
         super.onResume()
@@ -45,8 +43,12 @@ class RegisterFragment01 : Fragment(R.layout.fragment_register_01) {
                 getString(R.string.required)
             binding.inputPasswordConfirm.text.isNullOrEmpty() -> binding.inputLayoutPasswordConfirm.error =
                 getString(R.string.required)
-            binding.inputPassword.text.toString().trim() != binding.inputPasswordConfirm.text.toString().trim() ->
-                binding.inputLayoutPasswordConfirm.error = getString(R.string.passwords_are_not_the_same)
+            binding.inputPassword.text.toString() != binding.inputPasswordConfirm.text.toString() ->
+                binding.inputLayoutPasswordConfirm.error =
+                    getString(R.string.passwords_are_not_the_same)
+            binding.inputPassword.text.toString().length < 8 ->
+                binding.inputLayoutPassword.error =
+                getString(R.string.short_password_error)
             else -> {
                 sendArguments()
             }

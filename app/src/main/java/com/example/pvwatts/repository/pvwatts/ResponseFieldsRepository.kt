@@ -1,6 +1,6 @@
-package com.example.pvwatts.repository
+package com.example.pvwatts.repository.pvwatts
 
-import com.example.pvwatts.data.model.ResponseFields
+import com.example.pvwatts.data.model.pvwatts.ResponseFields
 
 interface ResponseFieldsRepository {
 

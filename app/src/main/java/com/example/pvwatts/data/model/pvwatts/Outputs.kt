@@ -1,4 +1,4 @@
-package com.example.pvwatts.data.model
+package com.example.pvwatts.data.model.pvwatts
 
 data class Outputs(
     val ac_monthly: List<Double> = listOf(),

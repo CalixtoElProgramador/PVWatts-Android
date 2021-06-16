@@ -1,9 +1,10 @@
-package com.example.pvwatts.repository
+package com.example.pvwatts.repository.pvwatts
 
-import com.example.pvwatts.data.model.ResponseFields
-import com.example.pvwatts.data.remote.ResponseFieldsDataSource
+import com.example.pvwatts.data.model.pvwatts.ResponseFields
+import com.example.pvwatts.data.remote.pvwatts.ResponseFieldsDataSource
 
-class ResponseFieldsRepositoryImpl(private val dataSource: ResponseFieldsDataSource) : ResponseFieldsRepository {
+class ResponseFieldsRepositoryImpl(private val dataSource: ResponseFieldsDataSource) :
+    ResponseFieldsRepository {
 
     override suspend fun getResponseFields(
         lat: Double,

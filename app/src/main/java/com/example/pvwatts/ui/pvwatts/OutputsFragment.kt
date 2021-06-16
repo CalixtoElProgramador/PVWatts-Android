@@ -9,12 +9,12 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.example.pvwatts.R
 import com.example.pvwatts.core.Resource
-import com.example.pvwatts.data.remote.ResponseFieldsDataSource
+import com.example.pvwatts.data.remote.pvwatts.ResponseFieldsDataSource
 import com.example.pvwatts.databinding.FragmentOutputsBinding
-import com.example.pvwatts.presentation.ResponseFieldsViewModel
-import com.example.pvwatts.presentation.ResponseFieldsViewModelFactory
-import com.example.pvwatts.repository.ResponseFieldsRepositoryImpl
-import com.example.pvwatts.repository.RetrofitClient
+import com.example.pvwatts.presentation.pvwatts.ResponseFieldsViewModel
+import com.example.pvwatts.presentation.pvwatts.ResponseFieldsViewModelFactory
+import com.example.pvwatts.repository.pvwatts.ResponseFieldsRepositoryImpl
+import com.example.pvwatts.repository.pvwatts.RetrofitClient
 import java.math.BigDecimal
 import java.math.RoundingMode
 

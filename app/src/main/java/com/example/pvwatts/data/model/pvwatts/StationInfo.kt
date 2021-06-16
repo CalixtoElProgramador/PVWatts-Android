@@ -1,4 +1,4 @@
-package com.example.pvwatts.data.model
+package com.example.pvwatts.data.model.pvwatts
 
 data class StationInfo(
     val lat: Double,

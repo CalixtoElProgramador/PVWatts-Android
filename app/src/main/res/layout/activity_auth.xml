@@ -39,6 +39,23 @@
 
     </LinearLayout>
 
+    <FrameLayout
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -82,5 +99,22 @@
             android:text="@string/next" />
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonsRegister">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

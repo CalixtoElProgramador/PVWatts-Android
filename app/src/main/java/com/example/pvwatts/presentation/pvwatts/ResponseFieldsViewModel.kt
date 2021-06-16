@@ -1,10 +1,10 @@
-package com.example.pvwatts.presentation
+package com.example.pvwatts.presentation.pvwatts
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.liveData
 import com.example.pvwatts.core.Resource
-import com.example.pvwatts.repository.ResponseFieldsRepository
+import com.example.pvwatts.repository.pvwatts.ResponseFieldsRepository
 import kotlinx.coroutines.Dispatchers
 import java.lang.Exception
 

@@ -81,13 +81,17 @@
     <string name="name">Name</string>
     <string name="lastname">Lastname</string>
     <string name="create_a_password">Create a password</string>
-    <string name="subtitle_register_01">Enter a password and retype it below to compare if they are the same</string>
+    <string name="subtitle_register_01">Enter a password and retype it below to compare if they are the same. Must be longer than eight characters</string>
     <string name="confirm_password">Confirm password</string>
     <string name="passwords_are_not_the_same">Passwords are not the same</string>
     <string name="smile">Smile!</string>
     <string name="subtitle_register_02">Click on the icon above to select your profile picture.</string>
     <string name="there_is_no_app_to_take_a_photo">There is no app to take a photo</string>
     <string name="select_a_photo">Select a photo</string>
+    <string name="this_email_is_already_in_use">This email is already in use</string>
+    <string name="insert_a_valid_email">Insert a valid email</string>
+    <string name="short_password_error">The password must be at least eight characters or more.</string>
+    <string name="error_login_verify_fields">An error has occurred. Verify that the fields entered are correct.</string>
 
     <string-array name="module_type">
         <item>Standard</item>

@@ -1,7 +1,7 @@
-package com.example.pvwatts.repository
+package com.example.pvwatts.repository.pvwatts
 
 import com.example.pvwatts.application.AppConstants
-import com.example.pvwatts.data.model.ResponseFields
+import com.example.pvwatts.data.model.pvwatts.ResponseFields
 import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
