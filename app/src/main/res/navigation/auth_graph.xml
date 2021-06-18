@@ -11,17 +11,16 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_PVWattsActivity"
-            app:destination="@id/PVWattsActivity" />
-        <action
             android:id="@+id/action_loginFragment_to_registerFragment00"
-            app:destination="@id/registerFragment00" />
+            app:destination="@id/registerFragment00"
+            app:enterAnim="@anim/fade_in_main"
+            app:exitAnim="@anim/fade_out_main"
+            app:popEnterAnim="@anim/fade_in_main"
+            app:popExitAnim="@anim/fade_out_main" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
-    <activity
-        android:id="@+id/PVWattsActivity"
-        android:name="com.example.pvwatts.ui.pvwatts.PVWattsActivity"
-        android:label="activity_pvwatts"
-        tools:layout="@layout/activity_pvwatts" />
     <fragment
         android:id="@+id/registerFragment00"
         android:name="com.example.pvwatts.ui.auth.RegisterFragment00"
@@ -54,11 +53,12 @@
         android:label="fragment_register_02"
         tools:layout="@layout/fragment_register_02" >
         <action
-            android:id="@+id/action_registerFragment02_to_PVWattsActivity"
-            app:destination="@id/PVWattsActivity"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            android:id="@+id/action_registerFragment02_to_mainActivity"
+            app:destination="@id/mainActivity" />
     </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.pvwatts.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
 </navigation>

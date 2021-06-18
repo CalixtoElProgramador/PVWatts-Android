@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.example.pvwatts.ui.explore.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_exploreFragment_to_addProjectFragment03"
+            app:destination="@id/addProjectFragment03" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pvwatts.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addProjectFragment00"
+            app:destination="@id/addProjectFragment00" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.pvwatts.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addProjectFragment00"
+        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment00"
+        android:label="fragment_add_project_00"
+        tools:layout="@layout/fragment_add_project_00" >
+        <action
+            android:id="@+id/action_addProjectFragment00_to_addProjectFragment01"
+            app:destination="@id/addProjectFragment01" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment01"
+        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment01"
+        android:label="fragment_add_project_01"
+        tools:layout="@layout/fragment_add_project_01" >
+        <action
+            android:id="@+id/action_addProjectFragment01_to_addProjectFragment02"
+            app:destination="@id/addProjectFragment02" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment02"
+        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment02"
+        android:label="fragment_add_project_02"
+        tools:layout="@layout/fragment_add_project_02" >
+        <action
+            android:id="@+id/action_addProjectFragment02_to_addProjectFragment03"
+            app:destination="@id/addProjectFragment03" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment03"
+        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment03"
+        android:label="fragment_add_project_03"
+        tools:layout="@layout/fragment_add_project_03" >
+        <action
+            android:id="@+id/action_addProjectFragment03_to_addProjectFragment04"
+            app:destination="@id/addProjectFragment04" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment04"
+        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment04"
+        android:label="fragment_add_project_04"
+        tools:layout="@layout/fragment_add_project_04" >
+        <action
+            android:id="@+id/action_addProjectFragment04_to_addProjectFragment05"
+            app:destination="@id/addProjectFragment05" />
+        <action
+            android:id="@+id/action_addProjectFragment04_to_addProjectFragment06"
+            app:destination="@id/addProjectFragment06" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment05"
+        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment05"
+        android:label="fragment_add_project_05"
+        tools:layout="@layout/fragment_add_project_05" >
+        <action
+            android:id="@+id/action_addProjectFragment05_to_addProjectFragment06"
+            app:destination="@id/addProjectFragment06" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProjectFragment06"
+        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment06"
+        android:label="fragment_add_project_06"
+        tools:layout="@layout/fragment_add_project_06" >
+        <action
+            android:id="@+id/action_addProjectFragment06_to_homeFragment2"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/main_graph" />
+    </fragment>
+</navigation>

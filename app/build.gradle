@@ -99,4 +99,10 @@ dependencies {
     // Circle Image View
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
+    //Lottie
+    implementation 'com.airbnb.android:lottie:3.7.0'
+
+    // Ken Burns View - For Ken Burns Effect
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+
 }

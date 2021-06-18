@@ -8,7 +8,6 @@ import android.view.View
 import android.widget.FrameLayout
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.pvwatts.R
 import com.example.pvwatts.core.Resource
@@ -87,7 +86,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 }
                 is Resource.Success -> {
                     isEnabledViews(true)
-                    findNavController().navigate(R.id.action_loginFragment_to_PVWattsActivity)
+                    findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
                     requireActivity().finish()
 
                 }
@@ -130,7 +129,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
     private fun isUserLoggedIn() {
         firebaseAuth.currentUser?.let {
-            findNavController().navigate(R.id.action_loginFragment_to_PVWattsActivity)
+            findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
         }
     }
 

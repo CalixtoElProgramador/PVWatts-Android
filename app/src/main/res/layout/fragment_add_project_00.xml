@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:paddingBottom="@dimen/_16sdp"
+    tools:context=".ui.home.addproject.AddProjectFragment00">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/type_of_project"
+        android:textColor="@color/TextPrimary"
+        android:textSize="@dimen/_24ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:lineSpacingExtra="@dimen/_1sdp"
+        android:text="@string/select_the_type_of_project_of_your_photovoltaic_system_to_start_sizing_it"
+        android:textColor="@color/TextSecondary"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:checkedButton="@id/rButton_gridConnected"
+        app:layout_constraintTop_toBottomOf="@id/textDescription">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rButton_gridConnected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/connected_to_the_grid"
+            android:textColor="@color/TextSecondary"
+            android:textSize="@dimen/_13ssp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rButton_isolated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isolated_only_batteries"
+            android:textColor="@color/TextSecondary"
+            android:textSize="@dimen/_13ssp" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonHibrido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hybrid"
+            android:textColor="@color/TextSecondary"
+            android:textSize="@dimen/_13ssp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

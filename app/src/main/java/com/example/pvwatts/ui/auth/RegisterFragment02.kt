@@ -65,7 +65,7 @@ class RegisterFragment02 : Fragment(R.layout.fragment_register_02) {
                                         isEnabledViews(false)
                                     }
                                     is Resource.Success -> {
-                                        findNavController().navigate(R.id.action_registerFragment02_to_PVWattsActivity)
+                                        findNavController().navigate(R.id.action_registerFragment02_to_mainActivity)
                                         isEnabledViews(true)
                                         requireActivity().finish()
                                     }
