@@ -40,14 +40,13 @@
         app:boxCornerRadiusTopEnd="@dimen/_4sdp"
         app:boxCornerRadiusTopStart="@dimen/_4sdp"
         app:helperTextEnabled="true"
-        app:layout_constraintTop_toBottomOf="@id/text_description"
-        app:suffixText="W">
+        app:layout_constraintTop_toBottomOf="@id/text_description">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="number" />
+            android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,14 +58,13 @@
         android:hint="@string/location"
         app:boxCornerRadiusTopEnd="@dimen/_4sdp"
         app:boxCornerRadiusTopStart="@dimen/_4sdp"
-        app:layout_constraintTop_toBottomOf="@id/inputLayout_name"
-        app:suffixText="V">
+        app:layout_constraintTop_toBottomOf="@id/inputLayout_name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_location"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="numberDecimal" />
+            android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,9 +73,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_16sdp"
-        android:background="@color/material_on_surface_disabled"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/inputLayout_location">
+        app:layout_constraintTop_toBottomOf="@id/inputLayout_location"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="@dimen/_24sdp"

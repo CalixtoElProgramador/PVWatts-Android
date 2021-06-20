@@ -9,11 +9,7 @@
         android:id="@+id/exploreFragment"
         android:name="com.example.pvwatts.ui.explore.ExploreFragment"
         android:label="fragment_explore"
-        tools:layout="@layout/fragment_explore" >
-        <action
-            android:id="@+id/action_exploreFragment_to_addProjectFragment03"
-            app:destination="@id/addProjectFragment03" />
-    </fragment>
+        tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.pvwatts.ui.home.HomeFragment"
@@ -21,7 +17,15 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_addProjectFragment00"
-            app:destination="@id/addProjectFragment00" />
+            app:destination="@id/addProjectFragment00"
+            app:enterAnim="@anim/fade_in_main"
+            app:exitAnim="@anim/fade_out_main"
+            app:popEnterAnim="@anim/fade_in_main"
+            app:popExitAnim="@anim/fade_out_main" />
+        <action
+            android:id="@+id/action_homeFragment_pop"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -35,7 +39,11 @@
         tools:layout="@layout/fragment_add_project_00" >
         <action
             android:id="@+id/action_addProjectFragment00_to_addProjectFragment01"
-            app:destination="@id/addProjectFragment01" />
+            app:destination="@id/addProjectFragment01"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment01"
@@ -44,7 +52,11 @@
         tools:layout="@layout/fragment_add_project_01" >
         <action
             android:id="@+id/action_addProjectFragment01_to_addProjectFragment02"
-            app:destination="@id/addProjectFragment02" />
+            app:destination="@id/addProjectFragment02"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment02"
@@ -53,7 +65,11 @@
         tools:layout="@layout/fragment_add_project_02" >
         <action
             android:id="@+id/action_addProjectFragment02_to_addProjectFragment03"
-            app:destination="@id/addProjectFragment03" />
+            app:destination="@id/addProjectFragment03"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment03"
@@ -62,7 +78,11 @@
         tools:layout="@layout/fragment_add_project_03" >
         <action
             android:id="@+id/action_addProjectFragment03_to_addProjectFragment04"
-            app:destination="@id/addProjectFragment04" />
+            app:destination="@id/addProjectFragment04"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment04"
@@ -71,10 +91,18 @@
         tools:layout="@layout/fragment_add_project_04" >
         <action
             android:id="@+id/action_addProjectFragment04_to_addProjectFragment05"
-            app:destination="@id/addProjectFragment05" />
+            app:destination="@id/addProjectFragment05"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_addProjectFragment04_to_addProjectFragment06"
-            app:destination="@id/addProjectFragment06" />
+            app:destination="@id/addProjectFragment06"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment05"
@@ -83,7 +111,11 @@
         tools:layout="@layout/fragment_add_project_05" >
         <action
             android:id="@+id/action_addProjectFragment05_to_addProjectFragment06"
-            app:destination="@id/addProjectFragment06" />
+            app:destination="@id/addProjectFragment06"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment06"
@@ -93,6 +125,10 @@
         <action
             android:id="@+id/action_addProjectFragment06_to_homeFragment2"
             app:destination="@id/homeFragment"
+            app:enterAnim="@anim/fade_in_main"
+            app:exitAnim="@anim/fade_out_main"
+            app:popEnterAnim="@anim/fade_in_main"
+            app:popExitAnim="@anim/fade_out_main"
             app:popUpTo="@id/main_graph" />
     </fragment>
 </navigation>

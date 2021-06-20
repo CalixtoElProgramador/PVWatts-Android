@@ -59,7 +59,7 @@
         app:boxCornerRadiusTopStart="@dimen/_4sdp"
         app:helperText="@string/sum_of_load_powers"
         app:layout_constraintTop_toBottomOf="@id/inputLayout_load"
-        app:prefixText="kW">
+        app:suffixText="kW">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputLoadMax"

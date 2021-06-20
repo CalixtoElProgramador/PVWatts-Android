@@ -29,10 +29,6 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_main) as NavHostFragment
         val navController = navHostFragment.navController
 
-        binding.lottieFavorites.setOnClickListener {
-            Toast.makeText(this, "Favorites", Toast.LENGTH_SHORT).show()
-        }
-
         binding.bottomNavigationBar.setupWithNavController(navController)
         observeDestinationChange(navController)
 
@@ -44,9 +40,6 @@ class MainActivity : AppCompatActivity() {
                 when (destination.id) {
                     R.id.homeFragment -> {
                         findNavController(R.id.nav_host_main).navigate(R.id.action_homeFragment_to_addProjectFragment00)
-                    }
-                    R.id.exploreFragment -> {
-                        findNavController(R.id.nav_host_main).navigate(R.id.action_exploreFragment_to_addProjectFragment03)
                     }
                 }
             }
@@ -72,17 +65,22 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.addProjectFragment06 -> {
                 }
+                R.id.exploreFragment -> {
+                    binding.eFABAddProject.visibility = View.GONE
+                }
+                R.id.profileFragment -> {
+                    binding.eFABAddProject.visibility = View.GONE
+                }
 
                 else -> {
                     binding.bottomNavigationBar.visibility = View.VISIBLE
-                    binding.eFABAddProject.visibility = View.VISIBLE
                     binding.buttonsCreateProject.visibility = View.GONE
                     binding.lottieFavorites.visibility = View.VISIBLE
+                    binding.eFABAddProject.visibility = View.VISIBLE
                     binding.lottieMore.visibility = View.VISIBLE
                     binding.lottieSearch.visibility = View.VISIBLE
                 }
             }
         }
     }
-
 }

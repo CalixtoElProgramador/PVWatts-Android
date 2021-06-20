@@ -127,6 +127,10 @@
     <string name="project_description">Project description</string>
     <string name="project_name">Project name</string>
     <string name="project_location">Project location</string>
+    <string name="view_pager_empty">So far you do not have any dimensioning. Start to create one with the button below</string>
+    <string name="select_an_option_first">Select an option first</string>
+    <string name="recommended_50">50% is recommended</string>
+    <string name="content_description_img_empty_home">Image used to show when the list is empty</string>
 
     <string-array name="module_type">
         <item>Standard</item>

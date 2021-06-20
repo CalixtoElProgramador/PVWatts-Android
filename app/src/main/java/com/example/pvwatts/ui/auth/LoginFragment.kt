@@ -10,7 +10,7 @@ import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.pvwatts.R
-import com.example.pvwatts.core.Resource
+import com.example.pvwatts.core.Result
 import com.example.pvwatts.data.remote.auth.UserDataSource
 import com.example.pvwatts.databinding.FragmentLoginBinding
 import com.example.pvwatts.presentation.auth.AuthViewModel
@@ -81,16 +81,16 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
 
         viewModel.signIn(email, password).observe(viewLifecycleOwner, { result ->
             when (result) {
-                is Resource.Loading -> {
+                is Result.Loading -> {
                     isEnabledViews(false)
                 }
-                is Resource.Success -> {
+                is Result.Success -> {
                     isEnabledViews(true)
                     findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
                     requireActivity().finish()
 
                 }
-                is Resource.Failure -> {
+                is Result.Failure -> {
                     isEnabledViews(true)
                     binding.textError.visibility = View.VISIBLE
                     binding.textError.text = getString(R.string.error_login_verify_fields)
@@ -130,6 +130,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     private fun isUserLoggedIn() {
         firebaseAuth.currentUser?.let {
             findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
+            requireActivity().finish()
         }
     }
 

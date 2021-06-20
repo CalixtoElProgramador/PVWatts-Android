@@ -10,10 +10,9 @@ import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.pvwatts.R
-import com.example.pvwatts.core.Resource
+import com.example.pvwatts.core.Result
 import com.example.pvwatts.data.remote.auth.UserDataSource
 import com.example.pvwatts.databinding.FragmentRegister00Binding
 import com.example.pvwatts.presentation.auth.AuthViewModel
@@ -73,10 +72,10 @@ class RegisterFragment00 : Fragment(R.layout.fragment_register_00) {
         // Check if the entered email is already logged in to the FirabaseFireStore.
         viewModelFireBase.isEmailRegister(email).observe(viewLifecycleOwner, { result ->
             when (result) {
-                is Resource.Loading -> {
+                is Result.Loading -> {
                     isEnabledViews(false)
                 }
-                is Resource.Success -> {
+                is Result.Success -> {
                     isEnabledViews(true)
                     if (!result.data) {
                         binding.inputLayoutEmail.error =
@@ -86,7 +85,7 @@ class RegisterFragment00 : Fragment(R.layout.fragment_register_00) {
                         findNavController().navigate(R.id.action_registerFragment00_to_registerFragment01)
                     }
                 }
-                is Resource.Failure -> {
+                is Result.Failure -> {
                     isEnabledViews(true)
                     Toast.makeText(
                         requireContext(),

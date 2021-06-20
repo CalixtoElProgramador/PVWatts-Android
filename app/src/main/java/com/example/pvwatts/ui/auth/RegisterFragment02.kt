@@ -13,17 +13,15 @@ import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.example.pvwatts.R
-import com.example.pvwatts.core.Resource
+import com.example.pvwatts.core.Result
 import com.example.pvwatts.data.remote.auth.UserDataSource
 import com.example.pvwatts.databinding.FragmentRegister02Binding
 import com.example.pvwatts.presentation.auth.AuthViewModel
 import com.example.pvwatts.presentation.auth.AuthViewModelFactory
 import com.example.pvwatts.repository.auth.AuthRepoImpl
 import com.google.android.material.button.MaterialButton
-import com.google.firebase.auth.FirebaseAuth
 
 class RegisterFragment02 : Fragment(R.layout.fragment_register_02) {
 
@@ -61,15 +59,15 @@ class RegisterFragment02 : Fragment(R.layout.fragment_register_02) {
                                 bitmap
                             ).observe(viewLifecycleOwner, { result ->
                                 when (result) {
-                                    is Resource.Loading -> {
+                                    is Result.Loading -> {
                                         isEnabledViews(false)
                                     }
-                                    is Resource.Success -> {
+                                    is Result.Success -> {
                                         findNavController().navigate(R.id.action_registerFragment02_to_mainActivity)
                                         isEnabledViews(true)
                                         requireActivity().finish()
                                     }
-                                    is Resource.Failure -> {
+                                    is Result.Failure -> {
                                         isEnabledViews(true)
                                         Toast.makeText(
                                             requireContext(),

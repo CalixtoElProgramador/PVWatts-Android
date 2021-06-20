@@ -41,7 +41,7 @@
         app:boxCornerRadiusTopStart="@dimen/_4sdp"
         app:helperTextEnabled="true"
         app:layout_constraintTop_toBottomOf="@id/text_description"
-        app:suffixText="W">
+        app:suffixText="Days">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_daysAutonomy"
@@ -59,8 +59,9 @@
         android:hint="@string/depth_of_discharge"
         app:boxCornerRadiusTopEnd="@dimen/_4sdp"
         app:boxCornerRadiusTopStart="@dimen/_4sdp"
+        app:helperText="@string/recommended_50"
         app:layout_constraintTop_toBottomOf="@id/inputLayout_daysAutonomy"
-        app:suffixText="V">
+        app:suffixText="%">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_depthDischarge"
@@ -79,7 +80,7 @@
         app:boxCornerRadiusTopEnd="@dimen/_4sdp"
         app:boxCornerRadiusTopStart="@dimen/_4sdp"
         app:layout_constraintTop_toBottomOf="@id/inputLayout_depthDischarge"
-        app:suffixText="A">
+        app:suffixText="Ah">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_batteryCapacity"
@@ -98,7 +99,7 @@
         app:boxCornerRadiusTopEnd="@dimen/_4sdp"
         app:boxCornerRadiusTopStart="@dimen/_4sdp"
         app:layout_constraintTop_toBottomOf="@id/inputLayout_batteryCapacity"
-        app:suffixText="A">
+        app:suffixText="V">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_batteryVoltage"

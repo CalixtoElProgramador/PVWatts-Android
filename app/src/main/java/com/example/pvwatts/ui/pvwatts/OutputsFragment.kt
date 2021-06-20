@@ -8,7 +8,7 @@ import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.example.pvwatts.R
-import com.example.pvwatts.core.Resource
+import com.example.pvwatts.core.Result
 import com.example.pvwatts.data.remote.pvwatts.ResponseFieldsDataSource
 import com.example.pvwatts.databinding.FragmentOutputsBinding
 import com.example.pvwatts.presentation.pvwatts.ResponseFieldsViewModel
@@ -47,14 +47,14 @@ class OutputsFragment : Fragment(R.layout.fragment_outputs) {
 
         viewModel.fetchMainScreenOutputs().observe(viewLifecycleOwner, { result ->
             when (result) {
-                is Resource.Loading -> {
+                is Result.Loading -> {
                     binding.progressBar.visibility = View.VISIBLE
                     binding.tableResults.tableResults.visibility = View.GONE
                     binding.tableLocation.tableLocation.visibility = View.GONE
                     binding.tableInputs.tableInputs.visibility = View.GONE
 
                 }
-                is Resource.Success -> {
+                is Result.Success -> {
                     binding.progressBar.visibility = View.GONE
                     binding.tableResults.tableResults.visibility = View.VISIBLE
                     binding.tableLocation.tableLocation.visibility = View.VISIBLE
@@ -149,38 +149,18 @@ class OutputsFragment : Fragment(R.layout.fragment_outputs) {
 
                     binding.tableInputs.outputSystemSize.text = "${args.systemCapacity} kW"
                     binding.tableInputs.outputModuleType.text = when (args.moduleType) {
-                        0 -> {
-                            "Standard"
-                        }
-                        1 -> {
-                            "Premium"
-                        }
-                        2 -> {
-                            "Thin film"
-                        }
-                        else -> {
-                            ""
-                        }
+                        0 -> { "Standard" }
+                        1 -> { "Premium" }
+                        2 -> { "Thin film" }
+                        else -> { "" }
                     }
                     binding.tableInputs.outputArrayType.text = when (args.arrayType) {
-                        0 -> {
-                            "Fixed - Open Rack"
-                        }
-                        1 -> {
-                            "Fixed - Roof Mounted"
-                        }
-                        2 -> {
-                            "1-Axis"
-                        }
-                        3 -> {
-                            "1-Axis Backtracking"
-                        }
-                        4 -> {
-                            "2-Axis"
-                        }
-                        else -> {
-                            ""
-                        }
+                        0 -> { "Fixed - Open Rack" }
+                        1 -> { "Fixed - Roof Mounted" }
+                        2 -> { "1-Axis" }
+                        3 -> { "1-Axis Backtracking" }
+                        4 -> { "2-Axis" }
+                        else -> { "" }
                     }
                     binding.tableInputs.outputArrayTilt.text = "${args.tilt}°"
                     binding.tableInputs.outputArrayAzimuth.text = "${args.azimuth}°"
@@ -198,7 +178,7 @@ class OutputsFragment : Fragment(R.layout.fragment_outputs) {
                         "$capacityFactor%"
 
                 }
-                is Resource.Failure -> {
+                is Result.Failure -> {
                     Log.d("LiveData", "${result.exception} ")
                 }
             }
