@@ -99,10 +99,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_16sdp"
         android:layout_marginBottom="@dimen/_52sdp"
-        android:text="@string/add"
+        android:text="@string/create_project"
         app:icon="@drawable/ic_add"
         app:layout_anchor="@id/bottomNavigationBar"
-        app:layout_anchorGravity="bottom|end"
+        app:layout_anchorGravity="bottom|center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -156,7 +156,8 @@
         android:layout_height="wrap_content"
         app:layout_anchorGravity="center"
         app:layout_anchor="@+id/button_next"
-        android:visibility="gone">
+        android:visibility="gone"
+        tools:visibility="visible">
 
         <ProgressBar
             android:layout_width="wrap_content"

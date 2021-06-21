@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/_16sdp"
-    tools:context=".ui.home.addproject.AddProjectFragment01">
+    tools:context=".ui.home.add_project.AddProjectFragment01">
 
     <TextView
         android:id="@+id/textTitle"

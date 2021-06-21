@@ -1,4 +1,4 @@
-package com.example.pvwatts.ui.home
+package com.example.pvwatts.ui.home.detail_project
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -15,6 +15,9 @@ class ProjectDetailFragment : Fragment(R.layout.fragment_project_detail) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentProjectDetailBinding.bind(view)
+
+
+
     }
 
 }

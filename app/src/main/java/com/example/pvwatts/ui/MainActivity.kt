@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                     binding.lottieFavorites.visibility = View.GONE
                     binding.lottieMore.visibility = View.GONE
                     binding.lottieSearch.visibility = View.GONE
+                    binding.progressBarHome.visibility = View.GONE
                 }
                 R.id.addProjectFragment01 -> {
                 }
@@ -67,9 +68,11 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.exploreFragment -> {
                     binding.eFABAddProject.visibility = View.GONE
+                    binding.progressBarHome.visibility = View.GONE
                 }
                 R.id.profileFragment -> {
                     binding.eFABAddProject.visibility = View.GONE
+                    binding.progressBarHome.visibility = View.GONE
                 }
 
                 else -> {

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:clipToPadding="false"
     android:padding="@dimen/_16sdp"
-    tools:context=".ui.home.addproject.AddProjectFragment05">
+    tools:context=".ui.home.add_project.AddProjectFragment05">
 
     <TextView
         android:id="@+id/text_title"

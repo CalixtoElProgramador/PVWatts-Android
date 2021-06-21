@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/_8sdp"
     android:paddingEnd="@dimen/_16sdp"
     android:paddingBottom="@dimen/_16sdp"
-    tools:context=".ui.home.addproject.AddProjectFragment00">
+    tools:context=".ui.home.add_project.AddProjectFragment00">
 
     <TextView
         android:id="@+id/textTitle"

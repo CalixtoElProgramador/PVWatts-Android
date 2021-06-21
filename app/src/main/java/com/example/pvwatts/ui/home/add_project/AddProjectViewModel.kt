@@ -1,4 +1,4 @@
-package com.example.pvwatts.ui.home.addproject
+package com.example.pvwatts.ui.home.add_project
 
 import android.graphics.Bitmap
 import androidx.lifecycle.LiveData

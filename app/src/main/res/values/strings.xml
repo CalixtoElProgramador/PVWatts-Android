@@ -99,7 +99,7 @@
     <string name="search">Search</string>
     <string name="projects">Projects</string>
     <string name="add_edit_and_share_your_projects">Add, edit and share your projects</string>
-    <string name="add">Add</string>
+    <string name="create_project">Create Project</string>
     <string name="hello_calixto">Hello, Calixto</string>
     <string name="type_of_project">Type of project</string>
     <string name="select_the_type_of_project_of_your_photovoltaic_system_to_start_sizing_it">Select the type of project of your photovoltaic system to start sizing it</string>
@@ -131,6 +131,12 @@
     <string name="select_an_option_first">Select an option first</string>
     <string name="recommended_50">50% is recommended</string>
     <string name="content_description_img_empty_home">Image used to show when the list is empty</string>
+    <string name="daily_demand">Daily demand</string>
+    <string name="number_of_modules">Number of modules</string>
+    <string name="a_inverter_of">An inverter of:</string>
+    <string name="a_controller_of">A controller of:</string>
+    <string name="number_of_batteries">Number of batteries</string>
+    <string name="units">Units</string>
 
     <string-array name="module_type">
         <item>Standard</item>

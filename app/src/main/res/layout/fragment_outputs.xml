@@ -24,21 +24,21 @@
 
     <include
         android:id="@+id/table_results"
-        layout="@layout/layout_table_outputs"
+        layout="@layout/table_outputs_pvwatts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
     <include
         android:id="@+id/table_location"
-        layout="@layout/layout_table_location"
+        layout="@layout/table_location_pvwatts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_16sdp" />
 
     <include
         android:id="@+id/table_inputs"
-        layout="@layout/layout_table_inputs"
+        layout="@layout/table_inputs_pvwatts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_16sdp" />

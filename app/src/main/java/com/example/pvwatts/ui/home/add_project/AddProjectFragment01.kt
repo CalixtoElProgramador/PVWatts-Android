@@ -1,10 +1,9 @@
-package com.example.pvwatts.ui.home.addproject
+package com.example.pvwatts.ui.home.add_project
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.pvwatts.R
 import com.example.pvwatts.databinding.FragmentAddProject01Binding

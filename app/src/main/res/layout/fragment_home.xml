@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/_8sdp"
     android:paddingBottom="@dimen/_16sdp"
     android:visibility="invisible"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    tools:visibility="visible">
 
 
     <LinearLayout
@@ -99,7 +100,7 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager_projects"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_300sdp"
+        android:layout_height="@dimen/_200sdp"
         android:layout_marginTop="@dimen/_16sdp"
         android:layout_marginBottom="@dimen/_16sdp"
         android:paddingStart="@dimen/_64sdp"

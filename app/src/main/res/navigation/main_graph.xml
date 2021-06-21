@@ -34,7 +34,7 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/addProjectFragment00"
-        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment00"
+        android:name="com.example.pvwatts.ui.home.add_project.AddProjectFragment00"
         android:label="fragment_add_project_00"
         tools:layout="@layout/fragment_add_project_00" >
         <action
@@ -47,7 +47,7 @@
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment01"
-        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment01"
+        android:name="com.example.pvwatts.ui.home.add_project.AddProjectFragment01"
         android:label="fragment_add_project_01"
         tools:layout="@layout/fragment_add_project_01" >
         <action
@@ -60,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment02"
-        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment02"
+        android:name="com.example.pvwatts.ui.home.add_project.AddProjectFragment02"
         android:label="fragment_add_project_02"
         tools:layout="@layout/fragment_add_project_02" >
         <action
@@ -73,7 +73,7 @@
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment03"
-        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment03"
+        android:name="com.example.pvwatts.ui.home.add_project.AddProjectFragment03"
         android:label="fragment_add_project_03"
         tools:layout="@layout/fragment_add_project_03" >
         <action
@@ -86,7 +86,7 @@
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment04"
-        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment04"
+        android:name="com.example.pvwatts.ui.home.add_project.AddProjectFragment04"
         android:label="fragment_add_project_04"
         tools:layout="@layout/fragment_add_project_04" >
         <action
@@ -106,7 +106,7 @@
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment05"
-        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment05"
+        android:name="com.example.pvwatts.ui.home.add_project.AddProjectFragment05"
         android:label="fragment_add_project_05"
         tools:layout="@layout/fragment_add_project_05" >
         <action
@@ -119,7 +119,7 @@
     </fragment>
     <fragment
         android:id="@+id/addProjectFragment06"
-        android:name="com.example.pvwatts.ui.home.addproject.AddProjectFragment06"
+        android:name="com.example.pvwatts.ui.home.add_project.AddProjectFragment06"
         android:label="fragment_add_project_06"
         tools:layout="@layout/fragment_add_project_06" >
         <action
