@@ -26,6 +26,13 @@
             android:id="@+id/action_homeFragment_pop"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_projectDetailFragment"
+            app:destination="@id/projectDetailFragment"
+            app:enterAnim="@anim/fade_in_main"
+            app:exitAnim="@anim/fade_out_main"
+            app:popEnterAnim="@anim/fade_in_main"
+            app:popExitAnim="@anim/fade_out_main" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -130,5 +137,65 @@
             app:popEnterAnim="@anim/fade_in_main"
             app:popExitAnim="@anim/fade_out_main"
             app:popUpTo="@id/main_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectDetailFragment"
+        android:name="com.example.pvwatts.ui.home.detail_project.ProjectDetailFragment"
+        android:label="fragment_project_detail"
+        tools:layout="@layout/fragment_project_detail" >
+        <argument
+            android:name="batteryCapacity"
+            app:argType="float" />
+        <argument
+            android:name="batteryDepthDischarge"
+            app:argType="float" />
+        <argument
+            android:name="batteryVoltage"
+            app:argType="float" />
+        <argument
+            android:name="createdAt"
+            app:argType="string" />
+        <argument
+            android:name="daysAutonomy"
+            app:argType="integer" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="inverterEfficiency"
+            app:argType="float" />
+        <argument
+            android:name="loadMax"
+            app:argType="float" />
+        <argument
+            android:name="loadMonth"
+            app:argType="float" />
+        <argument
+            android:name="modulePower"
+            app:argType="float" />
+        <argument
+            android:name="moduleVoltage"
+            app:argType="float" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="sunHours"
+            app:argType="integer" />
+        <argument
+            android:name="temperature"
+            app:argType="integer" />
+        <argument
+            android:name="typeProject"
+            app:argType="integer" />
+        <argument
+            android:name="uid"
+            app:argType="string" />
+        <argument
+            android:name="moduleCurrent"
+            app:argType="float" />
+        <argument
+            android:name="location"
+            app:argType="string" />
     </fragment>
 </navigation>

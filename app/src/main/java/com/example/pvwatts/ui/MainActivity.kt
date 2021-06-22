@@ -75,6 +75,13 @@ class MainActivity : AppCompatActivity() {
                     binding.progressBarHome.visibility = View.GONE
                 }
 
+                R.id.projectDetailFragment -> {
+                    binding.bottomNavigationBar.visibility = View.GONE
+                    binding.eFABAddProject.visibility = View.GONE
+                    binding.buttonsCreateProject.visibility = View.GONE
+                    binding.progressBarHome.visibility = View.GONE
+                }
+
                 else -> {
                     binding.bottomNavigationBar.visibility = View.VISIBLE
                     binding.buttonsCreateProject.visibility = View.GONE
@@ -82,6 +89,7 @@ class MainActivity : AppCompatActivity() {
                     binding.eFABAddProject.visibility = View.VISIBLE
                     binding.lottieMore.visibility = View.VISIBLE
                     binding.lottieSearch.visibility = View.VISIBLE
+                    binding.headerCreateProject.visibility = View.VISIBLE
                 }
             }
         }

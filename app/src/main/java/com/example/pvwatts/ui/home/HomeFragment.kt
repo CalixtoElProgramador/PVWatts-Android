@@ -8,12 +8,14 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import com.bumptech.glide.Glide
 import com.example.pvwatts.R
 import com.example.pvwatts.core.Result
+import com.example.pvwatts.data.model.member.Project
 import com.example.pvwatts.data.remote.home.HomeDataSource
 import com.example.pvwatts.databinding.FragmentHomeBinding
 import com.example.pvwatts.presentation.home.ProjectViewModel
@@ -22,7 +24,7 @@ import com.example.pvwatts.repository.home.HomeRepoImpl
 import com.example.pvwatts.ui.home.adapters.ProjectAdapter
 import kotlin.math.abs
 
-class HomeFragment : Fragment(R.layout.fragment_home) {
+class HomeFragment : Fragment(R.layout.fragment_home), ProjectAdapter.OnProjectClickListener {
 
     private lateinit var binding: FragmentHomeBinding
     private val viewModel by viewModels<ProjectViewModel> {
@@ -39,10 +41,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             when (result) {
                 is Result.Loading -> {
                     binding.homeFragment.visibility = View.GONE
-                    activity?.findViewById<FrameLayout>(R.id.progressBarHome)?.visibility = View.VISIBLE
+                    activity?.findViewById<FrameLayout>(R.id.progressBarHome)?.visibility =
+                        View.VISIBLE
                 }
                 is Result.Success -> {
-                    activity?.findViewById<FrameLayout>(R.id.progressBarHome)?.visibility = View.GONE
+                    activity?.findViewById<FrameLayout>(R.id.progressBarHome)?.visibility =
+                        View.GONE
                     binding.homeFragment.visibility = View.VISIBLE
                     binding.textHelloUser.text = "Hello, ${result.data?.name}"
                     Glide.with(requireContext()).load(result.data?.photo_url).centerCrop()
@@ -66,7 +70,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                         binding.messageVpEmpty.visibility = View.GONE
                         binding.viewPagerProjects.visibility = View.VISIBLE
                     }
-                    binding.viewPagerProjects.adapter = ProjectAdapter(result.data)
+                    binding.viewPagerProjects.adapter =
+                        ProjectAdapter(result.data, this@HomeFragment)
                 }
                 is Result.Failure -> {
                     Toast.makeText(
@@ -95,4 +100,27 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         binding.viewPagerProjects.setPageTransformer(compositePageTransformer)
     }
 
+    override fun onProjectClick(project: Project) {
+        val action = HomeFragmentDirections.actionHomeFragmentToProjectDetailFragment(
+            project.battery_capacity.toFloat(),
+            project.battery_depth_discharge.toFloat(),
+            project.battery_voltage.toFloat(),
+            project.created_at,
+            project.days_autonomy,
+            project.image_url,
+            project.inverter_efficiency.toFloat(),
+            project.load_max.toFloat(),
+            project.load_month.toFloat(),
+            project.module_power.toFloat(),
+            project.module_voltage.toFloat(),
+            project.name,
+            project.sun_hours,
+            project.temperature,
+            project.type_project,
+            project.uid,
+            project.module_current.toFloat(),
+            project.location
+        )
+        findNavController().navigate(action)
+    }
 }
